@@ -82,15 +82,15 @@ export default function Home() {
   const accent = isSolo ? '#F59E0B' : '#3B82F6';
 
   const services = isSolo ? [
-    { title: 'Sunset Sessions', desc: 'Golden hour acoustic sets for oceanside venues. Perfect for cocktail hours and romantic evenings.' },
-    { title: 'One Man Band', desc: 'Full sound from a single performer. Guitar, loops, and vocals creating a complete musical experience.' },
-    { title: 'Private Events', desc: 'Weddings, proposals, intimate dinners. Personalized setlists for your special moments.' },
-    { title: 'Restaurant Residencies', desc: 'Regular bookings for venues wanting consistent, quality live entertainment.' }
+    { title: 'Corporate Events', desc: 'Professional live entertainment for conferences, galas, team celebrations, and company functions. Sets the right tone for any business occasion.' },
+    { title: 'Weddings & Parties', desc: 'From intimate ceremonies to lively receptions. Custom setlists tailored to your special day and guest preferences.' },
+    { title: 'Restaurants & Hotels', desc: 'Regular bookings for venues wanting quality live music. Perfect for lobbies, lounges, poolside, and dining atmospheres.' },
+    { title: 'Full Sound Provided', desc: 'Professional PA system, microphones, and all equipment included. Just provide the space — everything else is covered.' }
   ] : [
-    { title: 'High Energy Shows', desc: 'Pack the dance floor all night. Four musicians bringing non-stop energy to your celebration.' },
-    { title: 'Corporate Events', desc: 'Professional entertainment for galas, conferences, and company celebrations.' },
-    { title: 'Weddings & Receptions', desc: 'From ceremony to last dance. Full production for your biggest day.' },
-    { title: 'Festivals & Concerts', desc: 'Stage-ready performances for large venues and outdoor events.' }
+    { title: 'Corporate Events', desc: 'Professional full-band entertainment for conferences, galas, product launches, and company celebrations that leave an impression.' },
+    { title: 'Weddings & Parties', desc: 'From ceremony to last dance. Four musicians bringing the energy and emotion your celebration deserves.' },
+    { title: 'Resorts & Venues', desc: 'Premium live entertainment for hotels, resorts, and event spaces. Regular bookings available for ongoing partnerships.' },
+    { title: 'Full Production', desc: 'Complete sound system, lighting, and professional setup included. We bring everything needed for a seamless performance.' }
   ];
 
   const tracks = isSolo 
@@ -197,7 +197,7 @@ export default function Home() {
         <div className="services-container">
           <div className="section-header">
             <p className="section-label" style={{ color: accent }}>Services</p>
-            <h2 className="section-title">{isSolo ? 'Set the Mood' : 'Elevate Your Event'}</h2>
+            <h2 className="section-title">{isSolo ? 'What I Offer' : 'What We Offer'}</h2>
           </div>
           <div className="services-grid">
             {services.map((item, i) => (
